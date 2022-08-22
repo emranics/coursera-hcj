@@ -17,10 +17,10 @@
 // byeSpeaker object instead of being a standalone function.
 // See Lecture 52, part 2
 var byeSpeaker = {};
-byeSpeaker.speak=function speak(name) {
+byeSpeaker.speak=(function speak(name) {
   var speakWord = "Good Bye";
   console.log(speakWord + " " + name);
-    };
+    });
 // STEP 9: Expose the 'byeSpeaker' object to the global scope. Name it
 // 'byeSpeaker' on the global scope as well.
 // xxxx.xxxx = byeSpeaker;
